@@ -26,13 +26,25 @@ sigma = zeros(1, size(X, 2));
 % Hint: You might find the 'mean' and 'std' functions useful.
 %       
 
+% Calculating mean and standard deviation
+mean_X1 = mean(X(:, 1));
+std_X1 = std(X(:, 1));
 
+mean_X2 = mean(X(:, 2));
+std_X2 = std(X(:, 1));
 
+k = size(X);
+m = k(1,1);
 
+for i = 1:m
+  mu(i,1) = mean_X1;
+  mu(i,2) = mean_X2;
+end
 
-
-
-
+for i = 1:m
+  sigma(i,1) = std_X1;
+  sigma(i,2) =std_X2;
+end
 
 % ============================================================
 
